@@ -4,7 +4,7 @@ const decreaseBtn = document.getElementById("submitDecrement")
 const resetBtn = document.getElementById("submitReset")
 const countContainer = document.getElementById("myH1")
 
-let displayNumber = "1"
+let displayNumber = "0"
 
 increaseBtn.onclick = function() {
     displayNumber++

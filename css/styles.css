@@ -1,27 +1,45 @@
+body {
+    box-sizing: border-box;
+    margin: auto;
+}
+
+.header-one-container {
+    display: flex;
+    justify-content: center;
+}
+
+.header-one {
+    font-weight: 100px;
+    font-style: normal;
+    text-justify: center;
+}
+
+
+
 .container {
     display: flex;
     justify-content: center;
-    gap: 5px;
 }
 
-.header {
+
+.project-link-box {
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: rgb(175, 175, 175);
+    border-width: 2px;
+    background-color: rgb(226, 226, 226);
+
     display: flex;
+    align-items: center;
     justify-content: center;
-    color: rgb(37, 37, 37);
-    font-size: 200%
 }
 
-button {
-    background-color: hsl(0, 0%, 53%);
-    color: white;
-    border-radius: 5px;
-    height: 40px;
-    width: 100px;
-    border-style: none;
-    cursor: pointer;
-    transition: background-color 0.25s;
+.project-links {
+    font-size: 30px;
+    display: block;
+    padding: 25px;
+    text-align: center;
 }
 
-button:hover {
-    background-color: hsl(0, 0%, 39%);;
-}
