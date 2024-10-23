@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    color: rgb(37, 37, 37);
+    font-size: 200%
+}
+
+button {
+    background-color: rgb(136, 136, 136);
+    color: white;
+    border-radius: 5px;
+    height: 40px;
+    width: 100px;
+    border-style: none;
+}
