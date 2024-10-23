@@ -12,10 +12,16 @@
 }
 
 button {
-    background-color: rgb(136, 136, 136);
+    background-color: hsl(0, 0%, 53%);
     color: white;
     border-radius: 5px;
     height: 40px;
     width: 100px;
     border-style: none;
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
+
+button:hover {
+    background-color: hsl(0, 0%, 39%);;
 }

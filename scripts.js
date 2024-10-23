@@ -1,19 +1,22 @@
 
+const increaseBtn = document.getElementById("submitIncrement")
+const decreaseBtn = document.getElementById("submitDecrement")
+const resetBtn = document.getElementById("submitReset")
+const countContainer = document.getElementById("myH1")
+
 let displayNumber = "1"
 
-document.getElementById("myH1").textContent = displayNumber
-
-document.getElementById("submitIncrement").onclick = function() {
+increaseBtn.onclick = function() {
     displayNumber++
-    document.getElementById("myH1").textContent = displayNumber
+    countContainer.textContent = displayNumber
 }
 
-document.getElementById("submitDecrement").onclick = function() {
+decreaseBtn.onclick = function() {
     displayNumber--
-    document.getElementById("myH1").textContent = displayNumber
+    countContainer.textContent = displayNumber
 }
 
-document.getElementById("submitReset").onclick = function() {
+resetBtn.onclick = function() {
     displayNumber = 0
-    document.getElementById("myH1").textContent = displayNumber
+    countContainer.textContent = displayNumber
 }
