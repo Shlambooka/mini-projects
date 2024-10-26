@@ -7,6 +7,15 @@ a {
     text-decoration: none;
 }
 
+
+
+.header {
+    display: flex;
+    justify-content: center;
+    color: rgb(37, 37, 37);
+    font-size: 200%
+}
+
 .header-one-container {
     display: flex;
     justify-content: center;
@@ -21,15 +30,21 @@ a {
 }
 
 
-.links-container {
+.container {
     display: flex;
     justify-content: center;
-    background-color: rgb(243, 243, 243);
+    gap: 5px;
+    background-color: #f3f3f3;
+}
+
+.links-container {
+    display: flex;
+
+    background-color: #f3f3f3;
     gap: 20px;
     padding: 2em;
     font-family: "Lexend Deca", sans-serif;
     font-weight: 100;
-
 }
 
 .project-link-box {
@@ -53,3 +68,22 @@ a {
     text-align: center;
 }
 
+.standardP {
+    text-align: center;
+}
+
+button {
+    background-color: hsl(0, 0%, 53%);
+    color: white;
+    border-radius: 5px;
+    height: 40px;
+    width: 200px;
+    border-style: none;
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
+
+
+button:hover {
+    background-color: hsl(0, 0%, 39%);;
+}

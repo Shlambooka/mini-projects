@@ -6,7 +6,7 @@
     <!-- MAIN STYLESHEET -->
     <link rel="stylesheet" href="../css/styles.css">
     <!-- PROJECT STYLESHEET -->
-    <!-- none -->
+    <link rel="stylesheet" href="../css/checked-property.css">
     <title>Random Number Generator</title>
 
 </head>
@@ -19,22 +19,26 @@
     </header>
 </div>
 
-<p>Let's pretend to subscribe and pay for some sort of service.</p>
+<div class="container-checked">
+    <div class="container-nested">
+        <p class="standardP">Let's pretend to subscribe and pay for some sort of service.</p>
 
-<input type="checkbox" id="myCheckbox">
-<label for="myCheckbox">Subscribe</label><br><br>
+        <input type="checkbox" id="myCheckbox">
+        <label for="myCheckbox">Subscribe</label><br><br>
 
-<input type="radio" id="visaBtn" name="paymentType">
-<label for="visaBtn">Visa</label><br>
-<input type="radio" id="masterCardBtn" name="paymentType">
-<label for="masterCardBtn">MasterCard</label><br>
-<input type="radio" id="payPalButton" name="paymentType">
-<label for="payPalButton">PayPal</label><br><br>
+        <input type="radio" id="visaBtn" name="paymentType">
+        <label for="visaBtn">Visa</label><br>
+        <input type="radio" id="masterCardBtn" name="paymentType">
+        <label for="masterCardBtn">MasterCard</label><br>
+        <input type="radio" id="payPalButton" name="paymentType">
+        <label for="payPalButton">PayPal</label><br><br>
 
-<button id="mySubmit">Submit</button>
+        <button id="mySubmit">Submit</button>
 
-<p id="myOutput"></p> <br>
-<p id="myPayment"></p>
+        <p class="standardP" id="myOutput"></p> <br>
+        <p class="standardP" id="myPayment"></p>
+    </div>
+</div>
 
     <script src="../js/checked-property.js"></script>
 </body>

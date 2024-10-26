@@ -1,27 +1,4 @@
-.container {
-    display: flex;
-    justify-content: center;
-    gap: 5px;
-}
 
-.header {
-    display: flex;
-    justify-content: center;
-    color: rgb(37, 37, 37);
-    font-size: 200%
-}
 
-button {
-    background-color: hsl(0, 0%, 53%);
-    color: white;
-    border-radius: 5px;
-    height: 40px;
-    width: 200px;
-    border-style: none;
-    cursor: pointer;
-    transition: background-color 0.25s;
-}
 
-button:hover {
-    background-color: hsl(0, 0%, 39%);;
-}
+
