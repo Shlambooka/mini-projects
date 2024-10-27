@@ -1,31 +1,44 @@
 const startBtn = document.getElementById("myButton")
-let randomNum = Math.floor(Math.random() * 10 + 1)
+let randomNum = Math.floor(Math.random() * 100 + 1)
 let userInput
 
 startBtn.onclick = function(){
-    userInput = window.prompt("Choose a number between 1 and 10.")
+    userInput = window.prompt("Choose a number between 1 and 100.")
+    convertToNumber()
+}
+
+function convertToNumber() {
     userInput = Number(userInput)
+    console.log(`User chose: ${userInput}`,"Data type is", typeof userInput, `randomNum = ${randomNum}`) 
     checkInput()
 }
 
 
- function checkInput(){   
-    if(userInput > 10 || userInput < 1) {
-        userInput = window.prompt("Please choose a number between 1 and 10.")
-        checkInput()
+function checkInput(){   
+    if (userInput === randomNum){
+        alert(`You chose the correct number: ${randomNum}!`)
+        randomNum = Math.floor(Math.random() * 100 + 1)
+    }
+    else if (userInput > 100 || userInput < 1) {
+        console.log("That number isn't between 1 and 100. Try again.", typeof userInput)
+        userInput = window.prompt("That number isn't between 1 and 100. Try again.")
+        convertToNumber()
     } 
-    else if (userInput < randomNum) {   
+    else if (userInput < randomNum) {
+        console.log("Try a higher number.", typeof userInput)    
         userInput = window.prompt("Try a higher number.")
-        checkInput()
+        convertToNumber()
     } 
     else if (userInput > randomNum) {
-            console.log("Try lower.", randomNum)
-            checkInput()
+        userInput = window.prompt("Try a lower number.")
+        console.log("Try lower.", typeof userInput, randomNum)
+        convertToNumber()
     }
     else {
-            randomNum = Math.floor(Math.random() * 10 + 1)
-            alert("YOU WON!")
-     }
+        console.log("Is that even a number?! Try again.", typeof userInput)
+        userInput = window.prompt("Is that even a number?! Try again.")
+        convertToNumber()
+    }
 }
 
 
