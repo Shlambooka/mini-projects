@@ -13,7 +13,6 @@ mySubmit.onclick = function() {
     else {
         mySubResult.textContent = ("You have NOT subscribed.")
     }
-
     if (visaBtn.checked){
         myPaymentResult.textContent = ("You are paying with Visa.")
     }

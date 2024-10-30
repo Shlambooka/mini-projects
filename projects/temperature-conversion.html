@@ -22,7 +22,10 @@
         <p>Convert your input to Celsius or Fahrenheit</p>
     </div>      
     <div class="container">
-        <input id="userInput">
+        <label>Temperature: </label>
+        <input type="text" id="userInput">
+
+        <label>Convert to: </label>
 
         <input type="radio" id="celsiusBtn" name="tempType">
         <label for="celsiusBtn">Celsius</label><br>
@@ -30,6 +33,9 @@
         <input type="radio" id="fahrenheitBtn" name="tempType">
         <label for="fahrenheitBtn">Fahrenheit</label><br>
         <button id="submit">CONVERT</button>
+    </div>
+    <div class="textReturn">
+        <h1 id="myH1">0</h1>
     </div>
 
     <script src="../js/temperature-conversion.js"></script>
