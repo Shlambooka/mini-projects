@@ -1,10 +1,12 @@
 const startBtn = document.getElementById("myButton")
-let randomNum = Math.floor(Math.random() * 100 + 1)
+const minNum = 1
+const maxNum = 100
+let randomNum = Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum
 let userInput
 let attempts = 0
 
 startBtn.onclick = function(){
-    userInput = window.prompt("Choose a number between 1 and 100.")
+    userInput = window.prompt(`Choose a number between ${minNum} and ${maxNum}.`)
     convertToNumber()
 }
 
@@ -31,11 +33,11 @@ function checkInput(){
         userInput = window.prompt("Is that even a number?! Try again.")
         convertToNumber()
     }
-    else if (userInput > 100 ) {
-        userInput = window.prompt("That number is above 100. Try again.")
+    else if (userInput > maxNum ) {
+        userInput = window.prompt(`That number is above ${maxNum}. Try again.`)
     }
-    else if (userInput < 1) {
-        userInput = window.prompt("That number is below 1. Try again.")
+    else if (userInput < minNum) {
+        userInput = window.prompt(`That number is below ${minNum}. Try again.`)
         convertToNumber()
     }
     else if (userInput < randomNum) {   
@@ -48,7 +50,7 @@ function checkInput(){
     }
     else if (userInput === randomNum){
         alert(`You chose the correct number: ${randomNum}! It took you ${attempts} attempts.`)
-        randomNum = Math.floor(Math.random() * 100 + 1)
+        randomNum = Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum
     }
     else {
         alert("You ended the game.")
