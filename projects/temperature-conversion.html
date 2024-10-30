@@ -18,18 +18,18 @@
         <h1 class="header-one">Temperature Conversion Calculator</h1>
     </header>
 </div>
-
-
-
-
-    <div class="header">
-        <h1 id="myHolder">0</h1>
-    </div>
     <div class="container">
-        <p>Generate a random number between 1 and 10</p>
+        <p>Convert your input to Celsius or Fahrenheit</p>
     </div>      
     <div class="container">
-        <button id="submit">GENERATE</button>
+        <input id="userInput">
+
+        <input type="radio" id="celsiusBtn" name="tempType">
+        <label for="celsiusBtn">Celsius</label><br>
+
+        <input type="radio" id="fahrenheitBtn" name="tempType">
+        <label for="fahrenheitBtn">Fahrenheit</label><br>
+        <button id="submit">CONVERT</button>
     </div>
 
     <script src="../js/temperature-conversion.js"></script>
