@@ -11,6 +11,8 @@ submitBtn.onclick = function(){
  
 }
 
+
+
 function userInputCheck(){
 
     if (isNaN(userInput)){
@@ -22,13 +24,13 @@ function userInputCheck(){
 }
 
 function checkRadioBtn(){
-    if (celsiusBtn.checked){
+    if (fahrenheitBtn.checked){
         let celsiusValue 
         let fahrenheitValue = userInput
         celsiusValue = (fahrenheitValue - 32) * 5 / 9
         returnContainer.textContent = fahrenheitValue + "°F converts to " + celsiusValue + "°C"
     }
-    else if (fahrenheitBtn.checked){
+    else if (celsiusBtn.checked){
         let celsiusValue = userInput
         let fahrenheitValue
         fahrenheitValue = celsiusValue * (9 / 5) + 32
