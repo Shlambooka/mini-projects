@@ -25,7 +25,7 @@ function checkRadioBtn(){
     if (celsiusBtn.checked){
         let celsiusValue 
         let fahrenheitValue = userInput
-        celsiusValue = (fahrenheitValue - 32) * 5/9
+        celsiusValue = (fahrenheitValue - 32) * 5 / 9
         returnContainer.textContent = fahrenheitValue + "°F converts to " + celsiusValue + "°C"
     }
     else if (fahrenheitBtn.checked){

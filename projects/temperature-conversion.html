@@ -18,25 +18,33 @@
         <h1 class="header-one">Temperature Conversion Calculator</h1>
     </header>
 </div>
-    <div class="container">
-        <p>Convert your input to Celsius or Fahrenheit</p>
-    </div>      
-    <div class="container">
-        <label>Temperature: </label>
-        <input type="text" id="userInput">
 
-        <label>Convert to: </label>
+<div class="converter-container">
+    <p>Convert your input to Celsius or Fahrenheit</p>
+</div>  
 
-        <input type="radio" id="celsiusBtn" name="tempType">
-        <label for="celsiusBtn">Celsius</label><br>
+<div class="converter-container">
+    <label>Temperature input: </label>
+    <input type="text" id="userInput" class="small-input">
+    <label>degrees</label>
+    <input type="radio" id="celsiusBtn" name="tempType">
+    <label for="celsiusBtn">Celsius</label>
 
-        <input type="radio" id="fahrenheitBtn" name="tempType">
-        <label for="fahrenheitBtn">Fahrenheit</label><br>
-        <button id="submit">CONVERT</button>
-    </div>
-    <div class="textReturn">
-        <h1 id="myH1">0</h1>
-    </div>
+    <input type="radio" id="fahrenheitBtn" name="tempType">
+    <label for="fahrenheitBtn">Fahrenheit</label>
+</div>
+
+<div class="converter-container">
+
+</div>
+
+<div class="converter-container">
+    <button id="submit">CONVERT</button>
+</div>
+<div class="converter-container">
+    <h1  class="textReturn" id="myH1">0</h1>
+</div>
+
 
     <script src="../js/temperature-conversion.js"></script>
 </body>
