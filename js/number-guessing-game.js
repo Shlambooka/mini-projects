@@ -6,19 +6,23 @@ let userInput
 let attempts = 0
 
 startBtn.onclick = function(){
+    attempts = 0
     userInput = window.prompt(`Choose a number between ${minNum} and ${maxNum}.`)
     convertToNumber()
 }
 
 function convertToNumber() {
     userInput = Number(userInput)
-    console.log(`User chose: ${userInput}`,"Data type is", typeof userInput, `randomNum = ${randomNum}`) 
-    checkCancel()
+    checkInput()
 }
 
-function checkCancel(){
-    if (userInput) {
-        checkInput()
+function checkInput(){
+    if (isNaN(userInput)){
+        userInput = window.prompt("Is that even a number?! Try again.")
+        convertToNumber()
+    }
+    else if (userInput) {
+        checkNumber()
     }
     else {
         alert("You ended the game.")
@@ -26,15 +30,12 @@ function checkCancel(){
     }
 }
 
-function checkInput(){  
+function checkNumber(){  
     attempts++ 
 
-    if (isNaN(userInput)){
-        userInput = window.prompt("Is that even a number?! Try again.")
-        convertToNumber()
-    }
-    else if (userInput > maxNum ) {
+    if (userInput > maxNum ) {
         userInput = window.prompt(`That number is above ${maxNum}. Try again.`)
+        convertToNumber()
     }
     else if (userInput < minNum) {
         userInput = window.prompt(`That number is below ${minNum}. Try again.`)
@@ -51,10 +52,6 @@ function checkInput(){
     else if (userInput === randomNum){
         alert(`You chose the correct number: ${randomNum}! It took you ${attempts} attempts.`)
         randomNum = Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum
-    }
-    else {
-        alert("You ended the game.")
-        attempts = 0
     }
 }
 
@@ -113,56 +110,6 @@ while (running){
 
 
 
-
-
-
-
-
-
-
-
-/* MY CODE FOR THE ORIGINAL WORKING VERSION
-
-const startBtn = document.getElementById("myButton")
-let randomNum = Math.floor(Math.random() * 100 + 1)
-let userInput
-
-startBtn.onclick = function(){
-    userInput = window.prompt("Choose a number between 1 and 100.")
-    convertToNumber()
-}
-
-function convertToNumber() {
-    userInput = Number(userInput)
-    console.log(`User chose: ${userInput}`,"Data type is", typeof userInput, `randomNum = ${randomNum}`) 
-    checkInput()
-}
-
-
-function checkInput(){   
-    if (userInput === randomNum){
-        alert(`You chose the correct number: ${randomNum}!`)
-        randomNum = Math.floor(Math.random() * 100 + 1)
-    }
-    else if (userInput > 100 || userInput < 1) {
-        userInput = window.prompt("That number isn't between 1 and 100. Try again.")
-        convertToNumber()
-    } 
-    else if (userInput < randomNum) {   
-        userInput = window.prompt(`The number is higher than ${userInput}.`)
-        convertToNumber()
-    } 
-    else if (userInput > randomNum) {
-        userInput = window.prompt(`The number is lower than ${userInput}`)
-        convertToNumber()
-    }
-    else {
-        userInput = window.prompt("Is that even a number?! Try again.")
-        convertToNumber()
-    }
-}
-
-*/
 
 
 
