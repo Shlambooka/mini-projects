@@ -1,5 +1,6 @@
 .textReturn {
-    font-size: 16px;
+    font-size: 15px;
+    padding: 20px;;
 
 }
 
@@ -11,6 +12,15 @@
     font-family: "Lexend Deca", sans-serif;
 }
 
+.dice-container-two {
+    background-color: #f3f3f3;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    font-family: "Lexend Deca", sans-serif;
+    min-height: 200px;
+}
+
 .small-input {
     text-align: right;
     width: 60px;
@@ -20,11 +30,7 @@
 .dice-container-return {
     display: flex;
     justify-content: center;
-    padding: 25px;
+    padding: 20px;
     background-color: #f3f3f3;
-}
-.dice {
-
-    width: 75px;
 }
 
