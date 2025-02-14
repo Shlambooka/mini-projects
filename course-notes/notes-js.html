@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
 
     <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,23 +33,35 @@
     </header>
 
     <main>
-        
-        <blockquote cite="https://www.theodinproject.com/dashboard">
-           <q>Sometimes I find a random screw lying around my house and I just assume it's from my life falling apart.</q>
-           <footer><cite>Anonymous <abbr title="What the f*ck">WTF</abbr></cite></footer>
-        </blockquote>
-   
-    </main>
-   
-    <div class="js-learning">
-    <h1 class="header-one">Nicole Nascimento's Notes</h1>
-        <ul>
-            <li><a href="/course-notes/notes-html-css-links.html">Link to my HTML Learnings</a></li>
-            <li><a href="/course-notes/notes-css-selectors.html">Link to my CSS Learnings</a></li>
-            <li><a href="/course-notes/notes-js.html">Link to my Javascript Learnings</a></li>
-        </ul>
+        <h2>Function Declarations versus Function Expressions</h2>
 
-    </div>
+        <table>
+            <tr>
+                <th>Function Declaration</th>
+                <th>Function Expression</th>
+            </tr>
+            <tr>
+                <td>Hoisted</td>
+                <td>Not hoisted</td>
+            </tr>
+            <tr>
+                <td>Use function keyword followed by a name</td>
+                <td>Often anonymous but also can be named</td>
+            </tr>
+            <tr>
+                <td>Stand alone as statements</td>
+                <td>Part of a larger expression</td>
+            </tr>
+            <tr>
+                <td>Best for defining reusable stand-alone functions</td>
+                <td>More flexible for dynamic use-cases: callbacks, IIFEs,etc.</td>
+            </tr>
+        </table>
+
+
+        
+    </main>
+
 
 
 

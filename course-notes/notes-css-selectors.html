@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <title>CSS Selectors Course Notes</title>
+
+</head>
+<body>
+   
+   
+    <header class="header-container">
+        <div class="logo-bg">
+            <a href="/index.html">
+                <div class="logo">nn</div>  
+            </a>  
+        </div>
+        <h1 class="header-one"><a href="/index.html">Mini-Projects</a></h1>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/main-pages/notes.main.html">Notes</a></li>
+                <li><a href="/main-pages/mini-projects.html">Mini-Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>CSS Selectors</h1>
+        <h2>Compound Selectors</h2>
+        <p><code>p.myclass{}</code> Compound: A sequence of simple selectors that are not separated by a combinator.</p>
+        
+        <h2>Combinator Selectors</h2>
+        <p><code>p .myclass{}</code> Descendant: The p tag is the ancestor of .myclass.</p>
+        <p><code>p > .myclass{}</code> Parent-child: The p tag is the parent of .myclass.</p>
+        <p><code>p + .myclass{}</code> Adjacent sibling: The p tag is the first sibling of .myclass.</p>
+        <p><code>p ~ .myclass{}</code> General sibling: The p tag is any sibling of .myclass.</p>
+
+        <h2>Attribute Selectors</h2>
+        <p><code>[title]{}</code> Simple attribute: Selects the title attribute.</p>
+        <p><code>[title=value]{}</code> Represents elements with an attribute name of title whose value is exactly value.</p>
+        <p><code>[title~=value]{}</code> Represents elements with an attribute name of title whose value is a whitespace-separated list of words, one of which is exactly value.</p>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors">More attribute selectors found here</a></p>
+
+
+    </main>
+
+
+
+</body>
+</html>
