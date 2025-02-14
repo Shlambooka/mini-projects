@@ -33,6 +33,47 @@
     </header>
 
     <main>
+        <h1>Sandbox:</h1>
+        <p>This is a place for me to practice JavaScript coding.</p>
+
+<script>
+
+
+
+// ---------------------- GAME START: FizzBuzz ---------------------- //
+
+function pickANumber(num){
+    let number = prompt("Pick a number");
+    listNumbers(number);
+    return number;
+}
+
+function listNumbers(num) {
+    for (i = 0; i <= num; i++) {
+        if (0 == i % 3 && 0 == i % 5) {
+            console.log("FizzBuzz");
+        } else if (0 == i % 3) {
+            console.log("Fizz");
+        } else if (0 == i % 5) {
+            console.log("Buzz");
+        } else {
+            console.log(i);
+        }
+    }
+    return console.log("complete");
+}
+
+//UNCOMMENT to play FizzBuzz
+//console.log(pickANumber());
+
+// ---------------------- GAME END: FizzBuzz ---------------------- //
+
+
+</script>
+
+
+        <hr>
+
         <h2>Function Declarations versus Function Expressions</h2>
 
         <table>
