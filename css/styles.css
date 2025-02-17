@@ -8,16 +8,40 @@ body {
     margin: auto;
     font-size: 1.6rem;     /* 16px */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 2.2rem;
+
 }
 main {
-    margin: 1.6rem;
+    margin: 2rem;
 }
 
 code {
     font-weight: 600;
     background-color: hsl(0, 0%, 90%);
-    padding: 5px 10px;
+    padding: 2px 8px;
+    border-radius: 5px;
+    font-size: 1.4rem;
+}
+
+code.error {
+    color: rgb(165, 3, 3);
+    font-weight: 100;
+}
+
+pre.script {
+    background-color: hsl(0, 0%, 95%);
+    padding: 10px;
+}
+
+kbd {
+    border: 2px solid black;
     border-radius: 3px;
+    padding: 1px 3px;
+    box-shadow: 1px 1px 2px grey;
+}
+
+h1 {
+    font-size: 3.2rem;
 }
 
 /* HEADER STYLES */

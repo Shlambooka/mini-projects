@@ -23,7 +23,7 @@
                 <div class="logo">nn</div>  
             </a>  
         </div>
-        <h1 class="header-one"><a href="/index.html">Mini-Projects</a></h1>
+        <h1 class="header-one"><a href="/index.html">HTML Notes</a></h1>
         <nav class="nav-bar">
             <ul>
                 <li><a href="/index.html">Home</a></li>
@@ -35,12 +35,25 @@
 
     <main>
         <h1>HTML & CSS Linking</h1>
-        <p><a href="./index.html">Here is a link going home.</a></p>
+        <h2>Linking Basics</h2>
+        <p><a href="/index.html">Here is a link going home.</a></p>
         <p>To create a link, add the anchor tag <code>&lta&gt</code> with the <code>href=""</code> attribute.</p>
         <p><code>&lta href="../index.html"&gt<a href="#">Link</a>&lt/a&gt</code></p>
+        <hr>
+        <h3>Local Directory Linking</h3>
         <p><code>../</code> means you are navigating to the parent directory.</p>
         <p><code>./</code> means you are navigating to the current directory itself.</p>
         <p><code>/</code> means you are navigating to the root directory.</p>
+        <hr>
+        <h3>Offsite Linking</h3>
+        <p><code>target="_blank"</code> means you are navigating to a new tab (offsite)</p>
+        <hr>
+        <p><code>&lt;iframe src="/index.html"&gt;</code> this is an iframe.</p>
+        <p> It is a security risk when you try to open a link pointing offsite. </p>
+        <p>It allows you to embed content from elsewhere.</p>
+        <p><code>target="_parent"</code> means the link will open inside of the iframes' parent, which is the webpage you are on.</p>
+        <p><code><iframe src="/index.html" width="300px" height="300px"></iframe></code></p>
+        <hr>
    
     </main>
 

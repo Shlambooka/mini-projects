@@ -22,7 +22,7 @@
                 <div class="logo">nn</div>  
             </a>  
         </div>
-        <h1 class="header-one"><a href="/index.html">Mini-Projects</a></h1>
+        <h1 class="header-one"><a href="/index.html">JavaScript Notes</a></h1>
         <nav class="nav-bar">
             <ul>
                 <li><a href="/index.html">Home</a></li>
@@ -33,43 +33,111 @@
     </header>
 
     <main>
-        <h1>Sandbox:</h1>
-        <p>This is a place for me to practice JavaScript coding.</p>
+        <section class="FizzBuzz">
+            <h1>FizzBuzz</h1>
+            <p>Open the console by pressing <kbd>Fn</kbd> + <kbd>F12</kbd> and type <code>pickANumber();</code></p>
+            <script>
+    
+            // ---------------------- GAME START: FizzBuzz ---------------------- //
+    
+            function pickANumber(num){
+                let number = prompt("Pick a number");
+                listNumbers(number);
+                return number;
+            }
+    
+            function listNumbers(num) {
+                for (i = 0; i <= num; i++) {
+                    if (0 == i % 3 && 0 == i % 5) {
+                        console.log("FizzBuzz");
+                    } else if (0 == i % 3) {
+                        console.log("Fizz");
+                    } else if (0 == i % 5) {
+                        console.log("Buzz");
+                    } else {
+                        console.log(i);
+                    }
+                }
+                return console.log("complete");
+            }
+    
+            //UNCOMMENT to play FizzBuzz
+            //console.log(pickANumber());
+    
+            // ---------------------- GAME END: FizzBuzz ---------------------- //
+            </script>
+    
+        </section>
+        
+        <hr>
 
-<script>
+        <section class="JavaScriptErrors">
+            <h1>Errors</h1>
+            <h2>Common Error Types</h2>
+            <h3>Reference Error</h3>
+            <p>A <code class="error">ReferenceError</code> is thrown when the variable you are referencing does not exist (within the current scope) or it has been misspelled.</p>
+            <p>The <code class="error">at script.js:4:13</code> shows you where the error occurred, the line, and the character number.</p>
+            <h3>Reference Error</h3>
+            <p>A <code class="error">SyntaxError</code> occurs when the code you are trying to run is not written correctly.</p>
+            <h3>Type Error</h3>
+            <p>A <code class="error">TypeError</code> is thrown when:</p>
+            <ul>
+                <li>an operand or argument passed to a function is incompatible with the type expected by that operator or function.</li>
+                <li>when attempting to modify a value that cannot be changed.</li>
+                <li>when attempting to use a value in an inappropriate way.</li>
+            </ul>
 
+            <h2>Stack Trace</h2>
+                <p>Here is some script:</p>
 
-
-// ---------------------- GAME START: FizzBuzz ---------------------- //
-
-function pickANumber(num){
-    let number = prompt("Pick a number");
-    listNumbers(number);
-    return number;
-}
-
-function listNumbers(num) {
-    for (i = 0; i <= num; i++) {
-        if (0 == i % 3 && 0 == i % 5) {
-            console.log("FizzBuzz");
-        } else if (0 == i % 3) {
-            console.log("Fizz");
-        } else if (0 == i % 5) {
-            console.log("Buzz");
-        } else {
-            console.log(i);
-        }
+<!-- Below is for the HTML Display do not indent -->
+<pre class="script">
+    const a = 5;
+    const b = 10;
+    
+    function add() {
+        return c;
     }
-    return console.log("complete");
-}
+    
+    function print() {
+        add();
+    }
+    
+    print();
+</pre>
+<!-- Above is for the HTML Display do not indent -->
 
-//UNCOMMENT to play FizzBuzz
-//console.log(pickANumber());
+                <p>If you open the console by pressing <kbd>Fn</kbd> + <kbd>F12</kbd> you will see the following:</p>
+                <script>
+                    const a = 5;
+                    const b = 10;
+                    function add() {
+                        return c;
+                    }
+                    function print() {
+                        add();
+                    }
+                    print();
+                </script>
 
-// ---------------------- GAME END: FizzBuzz ---------------------- //
+<!-- Below is for the HTML Display do not indent -->
+<p><pre>
+    Uncaught ReferenceError: c is not defined
+        at add (script.js:5)
+        at print (script.js:9)
+        at script.js.12 
+</pre></p>
+<!-- Above is for the HTML Display do not indent -->
 
-
-</script>
+                <p>The stack trace tells us:</p>
+                <ul>
+                    <li><code>c is not defined</code> in scope of <code>add()</code>, which is declared on line 5</li>
+                    <li><code>add()</code> was called by <code>print()</code>, which was declared on line 9.</li>
+                    <li><code>print()</code> itself was called on line 12.</li>
+                </ul>
+            
+        </section>
+        
 
 
         <hr>
