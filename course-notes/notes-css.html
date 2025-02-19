@@ -16,22 +16,18 @@
 </head>
 <body>
    
-   
-    <header class="header-container">
-        <div class="logo-bg">
-            <a href="/index.html">
-                <div class="logo">nn</div>  
-            </a>  
-        </div>
-        <h1 class="header-one"><a href="/index.html">CSS Notes</a></h1>
-        <nav class="nav-bar">
-            <ul>
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/main-pages/notes.main.html">Notes</a></li>
-                <li><a href="/main-pages/mini-projects.html">Mini-Projects</a></li>
-            </ul>
-        </nav>
+    <header>
+        <div><a href="/index.html">nn</a></div>
+        <h1><a href="/index.html">Nic Nascimento</a></h1>
     </header>
+
+    <nav class="nav-bar">
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/main-pages/notes.main.html">Notes</a></li>
+            <li><a href="/main-pages/mini-projects.html">Mini-Projects</a></li>
+        </ul>
+    </nav>
 
     <main>
         <h1>CSS Selectors</h1>
@@ -84,12 +80,48 @@
             <li>Has a higher level of specificity in your CSS.</li>
             <li>Accesses the shadow DOM if you use JavaScript.</li>
             <li>Used with CSS variables/custom properties.</li>
-
         </ul>
+        <p><code>:empty{}</code> Selects empty tags (comments permitted, white spaces are not).</p>
         
- 
+        <h2>Pseudo-classes for Links</h2>
+        <p><code>a:link{}</code> Selects unvisited links.</p>
+        <p><code>a:visited{}</code> Selects visited links.</p>
+        <p><code>a:hover{}</code> Selects link when mouse hovers over them.</p>
+        <p><code>a:active{}</code> Selects link when clicking down with mouse.</p>
+        <p><code>a:any-link{}</code> Selects any link in the visited or unvisited state - helps with raising specificity in the cascade (not super useful).</p>
+        <p><code>a:target{}</code> Selects links within a page and can highlight the linked section (works with href="#" tags).</p>
+        <h4>Accessibility</h4>
+        <p><code>a:focus{}</code> Selects the tab focus so you can apply styles.</p>
+        <p><code>ul:focus-within{}</code> Selects the element when there is a focus in the area.</p>
 
-  
+        <h2>Pseudo-classes for Forms</h2>
+        <h3>Form controls</h3>
+        <p><code>:required{}</code> Selects elements with the required attribute.</p>
+        <p><code>:optional{}</code> Selects elements with the optional attribute.</p>
+        <p><code>:enabled{}</code> Selects elements with the enabled attribute.</p>
+        <p><code>:disabled{}</code> Selects elements with the disabled attribute.</p>
+        <p><code>:read-only{}</code> Selects elements with the read-only attribute.</p>
+        <p><code>:read-write{}</code> Selects elements with the read-write attribute.</p>
+        <h3>Form control states</h3>
+        <p><code>:indeterminate{}</code> Selects button groups that do not have default or checked states.</p>
+        <p><code>:default{}</code> Selects checkboxes with the default attribute (and the first submit button in the form).</p>
+        <p><code>:checked{}</code> Selects checked elements.</p>
+        <h3>Text fields</h3>
+        <p><code>:autofill{}</code> Selects elements with the autofill attribute.</p>
+        <p><code>:placeholder-shown{}</code> Selects elements with the place-holder attribute.</p>
+        <h3>Error Checking</h3>
+        <p><code>:valid{}</code> Selects valid entries in the form.</p>
+        <p><code>:invalid{}</code> Selects invalid entries in the form.</p>
+        <p><code>:in-range{}</code> Selects form fields that are within allowable range in the form (numbers).</p>
+        <p><code>:out-of-range{}</code> Selects form fields that are out of range in the form (numbers).</p>
+
+        <h2>Additional Selectors</h2>
+        <p><code>is()</code> Selects</p>
+
+        
+
+
+
         <hr>
         <h1>CSS Inheritance, Specificity, and the Cascade</h1>
 

@@ -45,12 +45,12 @@ h1 {
 }
 
 /* HEADER STYLES */
-header {
+header:first-of-type {
+    height: 120px;
     color:  hsl(0, 0%, 90%);
     display: flex;
     justify-content: left;
     align-items: center;
-
     background-color: hsl(0, 0%, 10%);
     font-size: 2.4rem
 }
@@ -59,7 +59,7 @@ h1 a {
     color: hsl(0, 0%, 90%);;
 }
 
-.logo-bg {
+header:first-of-type div {
     margin-left: 20px;
     margin-right: 20px;
     display: flex;
@@ -69,39 +69,42 @@ h1 a {
     height: 5rem;
     width: 5rem;
     border-radius: 10rem;
-}
-.logo {
     color: hsl(0, 0%, 10%);
     font-weight: 900;
     font-size: 3rem;
 }
 
-/* NAV BAR STYLES */
-.nav-bar {
-    display: flex;
-    justify-content: right;
-    flex: 1 1 0;
-    margin-right: 25px;
+header:first-of-type div a {
+    color: hsl(0, 0%, 10%);
 }
 
-.nav-bar ul{
+
+/* NAV BAR STYLES */
+nav {
+    display: flex;
+    justify-content: left;
+    flex: 1 1 0;
+    background-color: hsl(266, 84%, 52%);
+    height: 50px;
+}
+
+nav ul{
     list-style-type: none;
 }
 
-.nav-bar li {
+nav li {
     display: inline-block;
     padding: 0 15px;
     text-transform: capitalize;
-
 }
 
-.nav-bar a {
+nav a {
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
-.nav-bar a:hover {
-    color:  hsl(0, 0%, 70%);
+nav a:hover {
+    color:  hsl(0, 0%, 95%);
 }
 
 /* MINI PROJECT STYLES */
@@ -169,6 +172,36 @@ button {
 
 button:hover {
     background-color: hsl(0, 0%, 39%);;
+}
+
+
+/* LINK STYLING */
+
+.links-container a {
+    line-height: 3.2rem;
+}
+
+
+/* LINK STYLING ON MINI-PROJECT PAGE */
+
+.links-container a:link {
+    color: hsl(345, 95%, 45%);
+}
+
+.links-container a:visited {
+    color: hsl(345, 30%, 45%);
+}
+
+.project-link-box:hover {
+    background-color: hsl(0, 0%, 75%);
+}
+
+.project-link-box a:hover {
+    color: hsl(345, 95%, 30%);
+}
+
+.project-link-box:active {
+    background-color: hsl(0, 0%, 55%);
 }
 
 
