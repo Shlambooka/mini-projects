@@ -87,6 +87,7 @@
         <p><code>:empty{}</code> Selects empty tags (comments permitted, white spaces are not).</p>
         
         <h2>Pseudo-classes for Links</h2>
+        <p>Lord Vader Former Handle Anakin - this is the order if using individual link states.</p>
         <p><code>a:link{}</code> Selects unvisited links.</p>
         <p><code>a:visited{}</code> Selects visited links.</p>
         <p><code>a:hover{}</code> Selects link when mouse hovers over them.</p>
@@ -139,6 +140,19 @@
         <p>Great for finding patterns in code. For example, using with media queries to change how many bullets of a list should be displayed per column.</p>
         <p><code>@media(min-width:600px)</code></p>
         <p><code>ul:has(li:nth-child(6)){columns 2}</code> For displays wider than 600px, the list will display in two columns if the list is longer than six items. </p>
+
+
+        <h2>Pseudo-elements</h2>
+        <p>Look like pseudo-classes but lower in specificity and act like and HTML element selector.</p>
+        <p><code>::first-line{}</code> Selects the first line of the element.</p>
+        <p><code>::first-letter{}</code> Selects the first letter of the element.</p>
+        <p><code>::before{}</code> Selects before the selector.</p>
+        <p><code>[href$=".pdf"]::after{ content: " (PDF) ";}</code> Selects the href attribute selector that ends with ".pdf" add the text "(PDF)" after it. </p>
+            
+        <h2>The Universal Selector</h2>
+        <p>The <code>body{border: 5px solid red;}</code> Selects everything in the body that is inherited by the body element (border would only surround the body).</p>
+        <p><code>*{border: 5px solid red;}</code> Selects everything in the document. Absolutely everything (every element will have a border).</p>
+
 
         <hr>
         <h1>CSS Inheritance, Specificity, and the Cascade</h1>

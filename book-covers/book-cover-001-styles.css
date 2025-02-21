@@ -1,0 +1,35 @@
+.libre-baskerville-regular {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .libre-baskerville-bold {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .libre-baskerville-regular-italic {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+
+div {
+    background-color: rgb(15, 7, 7);
+    height: 36rem;
+    width: 24rem;
+    margin: auto;
+    border-radius: 1rem;
+    color: beige;
+}
+
+h1{
+    padding: 10px;
+}
+
+cite {
+    padding: 10px;
+}
