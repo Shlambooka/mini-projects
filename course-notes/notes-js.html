@@ -40,6 +40,45 @@
             <hr>
         </section>
 
+        <section class="objects">
+            <h1>Objects</h1>
+            <p>I created a backpack object in the html script tag. It also has a purse object inside of it that you can check out using the console.</p>
+            <h2>Notation</h2>
+            <h3>Dot Notation</h3>
+            <p><code>console.log(backpack.pocketNum)</code></p>
+            <h3>Bracket Notation</h3>
+            <p><code>console.log(backpack["pocket-num"])</code></p>
+            <p>or</p>
+            <p><code>let query = "pocketNum"</code></p>
+            <p><code>console.log(backpack[query])</code></p>
+            
+
+            <script>
+                const backpack = {
+                    name: "Everyday Backpack",
+                    size: 60,
+                    pocketNum: 12,
+                    color: "grey",
+                    strapLength: {
+                        right: 30,
+                        left: 32,
+                    },
+                    lidOpen: false,
+                    toggle: function (lidStatus) {
+                        this.lidOpen = lidStatus;
+                    },
+                    purse: {
+                        name: "Purse",
+                        pocketNum: 2,
+                        color: "red",
+                        size: 10,
+                    }
+                }
+                console.log(backpack, backpack.purse);
+            </script>
+        </section>
+
+        
         <section class="FizzBuzz">
             <h1>FizzBuzz</h1>
             <p>Open the console by pressing <kbd>Fn</kbd> + <kbd>F12</kbd> and type <code>pickANumber();</code></p>
@@ -174,6 +213,31 @@
             </tr>
         </table>
 
+        <script>
+// Function declaration
+            function hello() {
+                console.log("Hello!");
+            }
+
+            hello();
+
+// function expression
+            const goodbye = function() {
+                console.log("Goodbye!");
+            }
+
+            goodbye();
+
+// arrow function
+            const goodDay = () => {
+                console.log("goodday!")
+            }
+
+            goodDay();
+
+
+
+        </script>
 
         
     </main>

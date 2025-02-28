@@ -17,19 +17,72 @@
   }
   
 
-div {
-    background-color: rgb(15, 7, 7);
+.book-cover {
+    background-color: rgb(59, 8, 19);
     height: 36rem;
     width: 24rem;
     margin: auto;
-    border-radius: 1rem;
-    color: beige;
+    border-radius: 0.25rem;
+    color: rgb(255, 241, 193);
+    position: absolute;
+    right: 50%;
+    margin-right: -12rem;
+    margin-bottom: -12rem;
+    box-shadow: 4px 4px 3px rgb(0, 0, 0);
 }
 
 h1{
-    padding: 10px;
+    padding: 2rem;
+    line-height: 2.4rem;
+    position: absolute;
+    top: 2%;
 }
 
 cite {
-    padding: 10px;
+    padding: 2rem;
+    position: absolute;
+    top: 28%;
+    
+}
+
+.book-border {
+    height: 32rem;
+    width: 20rem;
+    margin: 2rem;
+    border: 3px double rgb(255, 238, 181);
+    border-radius: 0.25rem;
+}
+
+
+.circle-man-outline {
+    position: absolute;
+    top: 50.5%;
+    right: 25.5%;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 100px;
+    border: 1px solid beige;
+}
+
+.circle-man {
+    position: absolute;
+    top: 50%;
+    right: 25%;
+    background-color: rgb(255, 222, 116);
+    height: 10rem;
+    width: 10rem;
+    border-radius: 100px;
+    opacity: 50%;
+}
+
+
+.circle-woman {
+    position: absolute;
+    top: 58%;
+    right: 14%;
+    background-color: rgb(22, 0, 7);
+    height: 12rem;
+    width: 12rem;
+    border-radius: 100px;
+    opacity: 50%;
 }
