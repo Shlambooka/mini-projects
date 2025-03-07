@@ -20,7 +20,7 @@
        
         <div><a href="/index.html">nn</a></div>
         <h1><a href="/index.html">Nic Nascimento</a></h1>
-        <div><img  class="header-img" src="/images/tulip_w4621_h3082.jpg" alt="A tulip in a pot." width="4621" height="3082"></div>
+       
         
     </header>
 
@@ -36,169 +36,320 @@
     </nav>
 
     <main>
+        <section id="forms">
+            <h1>Forms</h1>
+            <pre>        
+    &lt;form id="questions" method="post" action=""&gt;
+        &lt;label for="favcolor"&gt;What is your favourite colour?&lt;/label&gt;   
+        &lt;input type="text" name="favcolor" id="favcolor"&gt;
+        &lt;input type="submit"&gt;
+    &lt;/form&gt;
+            </pre>
 
-        <h1>Metadata</h1>
-
-
+            <form id="questions" method="post" action="">
+                <label for="favcolor">What is your favourite colour?</label>    
+                <input type="text" name="favcolor" id="favcolor">
+                </br>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                </br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" multiple>
+                </br>
+                <label for="website">URL:</label>
+                <input type="url" id="website" name="website">
+                </br>
+                <label for="number">Number:</label>
+                <input type="number" id="number" name="number" min="0" max="100" step="any"> 
+                <!-- step="2" // allows users to only input even numbers -->
+                <!-- step="any" // allows users to input decimals -->
+                </br>
+                <label for="birthday">Birthday:</label>
+                <input type="date" id="birthday" name="birthday" min="2017-01-01" max="2025-01-01">
+                </br>
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" step="1800">
+                <!-- step="1800" is in seconds, so that is 30min -->
+                </br>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone">
+                </br>
+                <input type="submit">
+            </form>
+        </section>
         <hr>
-        <h1>HTML Tables</h1>
-        <table>
-            <caption>Multiplication Table</caption>
-            <thead>  
-                <tr>
-                    <td>&nbsp</td> <!-- use non-breaking space to show an empty cell-->
-                    <th>1</th>
-                    <th>2</th>
-                    <th>3</th>
-                    <th>4</th>
-                    <th>5</th>
-                    <th>6</th>
-                    <th>7</th>
-                    <th>8</th>
-                    <th>9</th>
-                    <th>10</th>
-                    <th>11</th>
-                    <th>12</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</th>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>7</td>
-                    <td>8</td>
-                    <td>9</td>
-                    <td>10</td>
-                    <td>11</td>
-                    <td>12</td>
-                <tr>
-                    <td>2</th>
-                    <td>2</td>
-                    <td>4</td>
-                    <td>6</td>
-                    <td>8</td>
-                    <td>10</td>
-                    <td>12</td>
-                    <td>14</td>
-                    <td>16</td>
-                    <td>18</td>
-                    <td>20</td>
-                    <td>22</td>
-                    <td>24</td>
-                </tr>
-                <tr>
-                    <td>3</th>
-                    <td>3</td>
-                    <td>6</td>
-                    <td>9</td>
-                    <td>12</td>
-                    <td>15</td>
-                    <td>18</td>
-                </tr>
-                <tr>
-                    <td>4</th>
-                    <td>4</td>
-                    <td>8</td>
-                    <td>12</td>
-                    <td>16</td>
-                    <td>20</td>
-                    <td>24</td>
-                </tr>
-                <tr>
-                    <td>5</th>
-                    <td>5</td>
-                    <td>10</td>
-                    <td>15</td>
-                    <td>20</td>
-                    <td>25</td>
-                    <td>30</td>
-                </tr>
-                <tr>
-                    <td>6</th>
-                    <td>6</td>
-                    <td>12</td>
-                    <td>18</td>
-                    <td>24</td>
-                    <td>30</td>
-                    <td>36</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td colspan="7">Table Footer</th>
-                </tr>
-            </tfoot>
+
+        <section id="tables">
+            <h1>HTML Tables</h1>
+            <table>
+                <caption>Multiplication Table</caption>
+                <thead class="table-head">  
+                    <tr>
+                        <td>&nbsp</td> <!-- use non-breaking space to show an empty cell-->
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>4</th>
+                        <th>5</th>
+                        <th>6</th>
+                        <th>7</th>
+                        <th>8</th>
+                        <th>9</th>
+                        <th>10</th>
+                        <th>11</th>
+                        <th>12</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>1</th>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <th>2</th>
+                        <td>2</td>
+                        <td>4</td>
+                        <td>6</td>
+                        <td>8</td>
+                        <td>10</td>
+                        <td>12</td>
+                        <td>14</td>
+                        <td>16</td>
+                        <td>18</td>
+                        <td>20</td>
+                        <td>22</td>
+                        <td>24</td>
+                    </tr>
+                    <tr>
+                        <th>3</th>
+                        <td>3</td>
+                        <td>6</td>
+                        <td>9</td>
+                        <td>12</td>
+                        <td>15</td>
+                        <td>18</td>
+                        <td>21</td>
+                        <td>24</td>
+                        <td>27</td>
+                        <td>30</td>
+                        <td>33</td>
+                        <td>36</td>
+                    </tr>
+                    <tr>
+                        <th>4</th>
+                        <td>4</td>
+                        <td>8</td>
+                        <td>12</td>
+                        <td>16</td>
+                        <td>20</td>
+                        <td>24</td>
+                        <td>28</td>
+                        <td>32</td>
+                        <td>36</td>
+                        <td>40</td>
+                        <td>44</td>
+                        <td>48</td>
+                    </tr>
+                    <tr>
+                        <th>5</th>
+                        <td>5</td>
+                        <td>10</td>
+                        <td>15</td>
+                        <td>20</td>
+                        <td>25</td>
+                        <td>30</td>
+                        <td>35</td>
+                        <td>40</td>
+                        <td>45</td>
+                        <td>50</td>
+                        <td>55</td>
+                        <td>60</td>
+                    </tr>
+                    <tr>
+                        <th>6</th>
+                        <td>6</td>
+                        <td>12</td>
+                        <td>18</td>
+                        <td>24</td>
+                        <td>30</td>
+                        <td>36</td>
+                        <td>42</td>
+                        <td>48</td>
+                        <td>54</td>
+                        <td>60</td>
+                        <td>66</td>
+                        <td>72</td>
+                    </tr>
+                    <tr>
+                        <th>7</th>
+                        <td>7</td>
+                        <td>14</td>
+                        <td>21</td>
+                        <td>28</td>
+                        <td>35</td>
+                        <td>42</td>
+                        <td>49</td>
+                        <td>56</td>
+                        <td>63</td>
+                        <td>70</td>
+                        <td>77</td>
+                        <td>84</td>
+                    </tr>
+                    <tr>
+                        <th>8</th>
+                        <td>8</td>
+                        <td>16</td>
+                        <td>24</td>
+                        <td>32</td>
+                        <td>40</td>
+                        <td>48</td>
+                        <td>56</td>
+                        <td>64</td>
+                        <td>72</td>
+                        <td>80</td>
+                        <td>88</td>
+                        <td>96</td>
+                    </tr>
+                    <tr>
+                        <th>9</th>
+                        <td>9</td>
+                        <td>18</td>
+                        <td>27</td>
+                        <td>36</td>
+                        <td>45</td>
+                        <td>54</td>
+                        <td>63</td>
+                        <td>72</td>
+                        <td>81</td>
+                        <td>90</td>
+                        <td>99</td>
+                        <td>108</td>
+                    </tr>
+                    <tr>
+                        <th>10</th>
+                        <td>10</td>
+                        <td>20</td>
+                        <td>30</td>
+                        <td>40</td>
+                        <td>50</td>
+                        <td>60</td>
+                        <td>70</td>
+                        <td>80</td>
+                        <td>90</td>
+                        <td>100</td>
+                        <td>110</td>
+                        <td>120</td>
+                    </tr>
+                    <tr>
+                        <th>11</th>
+                        <td>11</td>
+                        <td>22</td>
+                        <td>33</td>
+                        <td>44</td>
+                        <td>55</td>
+                        <td>66</td>
+                        <td>77</td>
+                        <td>88</td>
+                        <td>99</td>
+                        <td>110</td>
+                        <td>121</td>
+                        <td>132</td>
+                    </tr>
+                    <tr>
+                        <th>12</th>
+                        <td>12</td>
+                        <td>24</td>
+                        <td>36</td>
+                        <td>48</td>
+                        <td>60</td>
+                        <td>72</td>
+                        <td>84</td>
+                        <td>96</td>
+                        <td>108</td>
+                        <td>120</td>
+                        <td>132</td>
+                        <td>144</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="13">Table Footer</th>
+                    </tr>
+                </tfoot>
+                
+            </table>
+        </section>
+
+        <section id="linking">
+            <hr>
+            <h1>HTML & CSS Linking</h1>
+            <h2>Linking Basics</h2>
+            <p><a href="/index.html">Here is a link going home.</a></p>
+            <p>To create a link, add the anchor tag <code>&lta&gt</code> with the <code>href=""</code> attribute.</p>
+            <p><code>&lta href="../index.html"&gt<a href="#">Link</a>&lt/a&gt</code></p>
+            <hr>
+            <h3>Local Directory Linking</h3>
+            <p><code>../</code> means you are navigating to the parent directory.</p>
+            <p><code>./</code> means you are navigating to the current directory itself.</p>
+            <p><code>/</code> means you are navigating to the root directory.</p>
             
-        </table>
-
-
-
-
-
-
-
-        <hr>
-        <h1>HTML & CSS Linking</h1>
-        <h2>Linking Basics</h2>
-        <p><a href="/index.html">Here is a link going home.</a></p>
-        <p>To create a link, add the anchor tag <code>&lta&gt</code> with the <code>href=""</code> attribute.</p>
-        <p><code>&lta href="../index.html"&gt<a href="#">Link</a>&lt/a&gt</code></p>
-        <hr>
-        <h3>Local Directory Linking</h3>
-        <p><code>../</code> means you are navigating to the parent directory.</p>
-        <p><code>./</code> means you are navigating to the current directory itself.</p>
-        <p><code>/</code> means you are navigating to the root directory.</p>
-        
-        <hr>
-        <h3>Offsite Linking</h3>
-        <p><code>target="_blank"</code> means you are navigating to a new tab (offsite)</p>
-        <hr>
-        <p><code>&lt;iframe src="/index.html"&gt;</code> this is an iframe.</p>
-        <p> It is a security risk when you try to open a link pointing offsite. </p>
-        <p>It allows you to embed content from elsewhere.</p>
-        <p><code>target="_parent"</code> means the link will open inside of the iframes' parent, which is the webpage you are on.</p>
-        <p><code><iframe src="/index.html" width="300px" height="300px"></iframe></code></p>
-        
-        <hr>
-        <h3>Linking PDFs</h3>
-        <p><code>&lta href="/pdfs/dummy.pdf.html"&gt</code><a href="/pdfs/dummy.pdf">Dummy(click to download)</a></p>
-        <p>You can also link a pdf via a url to an offsite document.</p>
-        
-        <hr>
-        <h3>Linking Within a Document</h3>
-        <p><code>&lta href="#top"&gt</code><a href="#top">Back to top</a> will take you to the <code>&ltdiv id="top"&gt</code> element that sits at the top of this webpage.</p>
-        
-        <hr>
-        <h3>Linking Phone Numbers</h3>
-        <p><code>&lta href="tel:1-234-567-8910"&gt</code>Call me at <a href="tel:1-234-567-8910">1-234-567-8910</a></p>
-        
-        <hr>
-        <h3>Linking Email</h3>
-        <p><code>&lta href="mailto:email@email.com?subject=addRandomSubject&cc=another@email.com&body=I can even write in the body"&gt</code><a href="mailto:email@email.com?subject=RandomEmail">Email me</a></p>
-        <ul>
-            <li>add <code>?subject=</code> to add a subject to the email.</li>
-            <li>add <code>&cc=</code> to add another email address to the email.</li>
-            <li>add <code>&body=</code> to add text to the body in the email.</li>
-        </ul>
-        <hr>
-        <h3>Linking Images</h3>
-        <a href="https://littlemissabyss.com" target="_blank">
-            <img src="/images/lma-logo.png" width="200px" alt="little miss abyss logo">
-        </a>
-        <p><code>&lt;a href="#"&gt; &lt;img src="/images/lma-logo" alt="#" width="#"&gt; &lt;/a&gt;</code></p>
-        
-        <h4>Linking Images with Image Map</h4>
-        <p>Notice the pointer only switches to a hand when within the white under the umbrella.</p>
-            <!-- Image Map Generated by http://www.image-map.net/ -->
-            <img src="/images/lma-logo.png" width="400px" alt="this link takes you to the lma website" usemap="#image-map">
-            <map name="image-map">
-                <area target="_blank" alt="Little Miss Abyss" title="Little Miss Abyss" href="https://littlemissabyss.com" coords="105,320,25,127,63,71,95,55,118,37,152,32,187,27,259,55,318,205,318,318" shape="poly">
-            </map>
+            <hr>
+            <h3>Offsite Linking</h3>
+            <p><code>target="_blank"</code> means you are navigating to a new tab (offsite)</p>
+            <hr>
+            <p><code>&lt;iframe src="/index.html"&gt;</code> this is an iframe.</p>
+            <p> It is a security risk when you try to open a link pointing offsite. </p>
+            <p>It allows you to embed content from elsewhere.</p>
+            <p><code>target="_parent"</code> means the link will open inside of the iframes' parent, which is the webpage you are on.</p>
+            <p><code><iframe src="/index.html" width="300px" height="300px"></iframe></code></p>
+            
+            <hr>
+            <h3>Linking PDFs</h3>
+            <p><code>&lta href="/pdfs/dummy.pdf.html"&gt</code><a href="/pdfs/dummy.pdf">Dummy(click to download)</a></p>
+            <p>You can also link a pdf via a url to an offsite document.</p>
+            
+            <hr>
+            <h3>Linking Within a Document</h3>
+            <p><code>&lta href="#top"&gt</code><a href="#top">Back to top</a> will take you to the <code>&ltdiv id="top"&gt</code> element that sits at the top of this webpage.</p>
+            
+            <hr>
+            <h3>Linking Phone Numbers</h3>
+            <p><code>&lta href="tel:1-234-567-8910"&gt</code>Call me at <a href="tel:1-234-567-8910">1-234-567-8910</a></p>
+            
+            <hr>
+            <h3>Linking Email</h3>
+            <p><code>&lta href="mailto:email@email.com?subject=addRandomSubject&cc=another@email.com&body=I can even write in the body"&gt</code><a href="mailto:email@email.com?subject=RandomEmail">Email me</a></p>
+            <ul>
+                <li>add <code>?subject=</code> to add a subject to the email.</li>
+                <li>add <code>&cc=</code> to add another email address to the email.</li>
+                <li>add <code>&body=</code> to add text to the body in the email.</li>
+            </ul>
+            <hr>
+            <h3>Linking Images</h3>
+            <a href="https://littlemissabyss.com" target="_blank">
+                <img src="/images/lma-logo.png" width="200px" alt="little miss abyss logo">
+            </a>
+            <p><code>&lt;a href="#"&gt; &lt;img src="/images/lma-logo" alt="#" width="#"&gt; &lt;/a&gt;</code></p>
+            
+            <h4>Linking Images with Image Map</h4>
+            <p>Notice the pointer only switches to a hand when within the white under the umbrella.</p>
+                <!-- Image Map Generated by http://www.image-map.net/ -->
+                <img src="/images/lma-logo.png" width="400px" alt="this link takes you to the lma website" usemap="#image-map">
+                <map name="image-map">
+                    <area target="_blank" alt="Little Miss Abyss" title="Little Miss Abyss" href="https://littlemissabyss.com" coords="105,320,25,127,63,71,95,55,118,37,152,32,187,27,259,55,318,205,318,318" shape="poly">
+                </map>
+        </section>
 
     </main>
 
